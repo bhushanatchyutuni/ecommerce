@@ -68,7 +68,6 @@ app.post('/signup', async (req, res) => {
             // Redirect to the signin page after successful signup
             res.redirect("/");
         }
-        
     } catch (error) {
         if (error.name === 'ValidationError') {
             console.error("Validation Error:", error.errors);
